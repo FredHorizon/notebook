@@ -3,6 +3,8 @@ class KindsController < ApplicationController
 
   # GET /kinds
   # GET /kinds.json
+  # Kind é o model. Esse método diz:
+  # pegue todos os kinds do model e jogue na variável de instância @kinds ( SELECT "kinds".* FROM "kinds").
   def index
     @kinds = Kind.all
   end
