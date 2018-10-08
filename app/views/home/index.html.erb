@@ -1,8 +1,10 @@
 <h1>Agenda Telefônica</h1>
 
+<%= titulo %> <!-- helper home -->
+<%= soma 2 %> <!-- helper para toda aplicação -->
 <ul>
-    <li><a href="http://localhost:3000/addresses">Endereço</a></li>
-    <li><a href="http://localhost:3000/contacts">Contatos</a></li>
-    <li><a href="http://localhost:3000/kinds">Tipos</a></li>
-    <li><a href="http://localhost:3000/phones">Telefones</a></li>
+    <li><%= link_to "Endereços", addresses_path %></li>
+    <li><%= link_to "Contatos", contacts_path %></li>
+    <li><%= link_to "Tipos", kinds_path %></li>
+    <li><%= link_to "Telefones", phones_path %></li>
 </ul>
