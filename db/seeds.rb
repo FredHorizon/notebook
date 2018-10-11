@@ -5,3 +5,21 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+puts "Gerando os tipos de contato (Kinds)..."
+    Kind.create!([{description: "Amigo"},
+                  {description: "Trabalho"},
+                  {description: "Família"}
+                ])
+puts "Gerando os tipos de contato (Kinds)...[OK]"
+
+puts "Gerando os contatos (Contacts)..."
+    10.times do |i|
+        Contact.create!(
+            name: Faker::Name.name,
+            email: Faker::Internet.email,
+            kind: Kind.all.sample, # sample vai varrer todos os elementos do Kind e escolher um aleatoriamente.
+            rmk: Faker::Lorem.paragraph([1,2,3,4,5].sample)
+        )
+    end
+puts "Gerando os contatos (Contacts)...[OK]"

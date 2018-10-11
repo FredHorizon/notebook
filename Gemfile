@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Bootstrap 3
 gem 'twitter-bootstrap-rails'
+# A library for generating fake data such as names, addresses, and phone numbers. 
+gem 'faker'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
