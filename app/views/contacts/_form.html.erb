@@ -23,6 +23,13 @@
     <%= f.label :kind_id %><br>
     <%= collection_select(:contact, :kind_id, @kind_options_for_select, :id, :description) %>
   </div>
+
+  <%= f.fields_for :address do |address_fields| %> <!-- 'f.' chama o formulário de address -->
+    Street: <%= address_fields.text_field :street %>
+    City: <%= address_fields.text_field :city %>
+    State: <%= address_fields.text_field :state %>
+  <% end %>
+
   <div class="field">
     <%= f.label :rmk %><br>
     <%= f.text_area :rmk, class: "form-control", rows: 4 %>
