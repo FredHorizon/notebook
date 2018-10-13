@@ -1,6 +1,4 @@
-== README
-
-Configuração RubyOnRails usada para a aplicação:
+== CONFIGURAÇÃO DEV RoR
 
 * rvm 1.29.3
 
