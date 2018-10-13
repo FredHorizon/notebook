@@ -6,12 +6,9 @@
 
 * Rails version 2.3.0p0
 
-* SGDB SQLite3
+* SGBD SQLite3
 
 * Gems:
     gem 'twitter-bootstrap-rails'
     gem 'faker'
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
