@@ -26,18 +26,18 @@
 
   <%= f.fields_for :address do |address_fields| %> <!-- 'f.' chama o formulário de address -->
     <div class="field">
-      <%= f.label :street %><br>
+      <%= address_fields.label :street %><br>
       <%= address_fields.text_field :street, class: "form-control" %>
     </div>
 
     <div class="field">
-      <%= f.label :city %><br>
+      <%= address_fields.label :city %><br>
       <%= address_fields.text_field :city, class: "form-control" %>
     </div>
     
     <div class="field">
-      <%= f.label :state %><br>
-      <%= address_fields.text_field :state, class: "form-control" %>
+      <%= address_fields.label :state %><br>
+      <%= address_fields.select :state, options_for_states(@contact.address.state), class: "form-control" %>
     </div>
   <% end %>
 
