@@ -1,0 +1,4 @@
+"pt-BR": # idioma
+  hello:  # chave: "valor"
+    friend: "Olá, bro!"
+  hi: "Olá!"
