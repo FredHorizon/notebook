@@ -4,5 +4,5 @@ class Contact < ActiveRecord::Base
   has_many :phones # possui muitos telefones. Obs: nesse caso, tem que ser no plural mesmo, senão a relação não é identificada.
 
   accepts_nested_attributes_for :address
-  accepts_nested_attributes_for :phones
+  accepts_nested_attributes_for :phones, reject_if: :all_blank, allow_destroy: true # parâmetros da gem cocoon
 end

@@ -79,6 +79,6 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(:name, :email, :kind_id, :rmk,
         address_attributes: [:street, :city, :state],
-        phones_attributes: [:id, :phone]) # Strong Parameters. Permite que os telefones cheguem aqui e sejam atualizados.
+        phones_attributes: [:id, :phone, :_destroy]) # Strong Parameters. Permite a criação, atualização e destruição de telefones. Este último pela gem cocoon.
     end
 end

@@ -1,0 +1,8 @@
+<div class="nested-fields"> <!-- para o correto funcionamento com javascript -->
+    <div class="field">
+        <%= f.label :phone %><br> <!-- 'phones_fields' passa a ser 'f.' por conta da mudança de feita em 'locals'-->
+        <%= f.text_field :phone, class: "form-control" %>
+
+        <%= link_to_remove_association('remover', f) %> <!-- reove dinamicamente o elemento através desta partial -->
+    </div>
+</div>
