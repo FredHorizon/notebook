@@ -8,9 +8,11 @@
 </head>
 <body>
 
-<div class="container">
-  <%= nav_bar brand: "Agenda Telefonica", brand_link: root_url %>
-  <%= yield %>
+<div id="wrapper">
+  <div class="container body-content">
+    <%= nav_bar brand: "Agenda Telefonica", brand_link: root_url %>
+    <%= yield %>
+  </div>
 </div>
 <br>
 <%= render "layouts/footer" %>
