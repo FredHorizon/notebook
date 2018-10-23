@@ -1,27 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Kinds</h1>
+<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"  align="center">
 
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <h1><%= "#{t('messages.listing')} #{@kinds.model_name.human(count: 2)}" %></h1>
 
-  <tbody>
-    <% @kinds.each do |kind| %>
-      <tr>
-        <td><%= kind.description %></td>
-        <td><%= link_to 'Show', kind %></td>
-        <td><%= link_to 'Edit', edit_kind_path(kind) %></td>
-        <td><%= link_to 'Destroy', kind, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <table class="table">
+    <thead>
+      <tr class="active">
+        <th><%= @kinds.model.human_attribute_name("description") %></th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @kinds.each do |kind| %>
+        <tr style="background: <%= cycle('#fff', '#f2f2f2') %>">
+          <td><%= kind.description %></td>
+          <td><%= link_to t('buttons.show'), kind, class: "btn btn-info" %></td>
+          <td><%= link_to t('buttons.edit'), edit_kind_path(kind), class: "btn btn-warning" %></td>
+          <td><%= link_to t('buttons.destroy'), kind, method: :delete, data: { confirm: t('messages.confirm') }, class: "btn btn-danger" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Kind', new_kind_path %>
+  <br>
+
+  <%= link_to t('buttons.new'), new_kind_path, class: "btn btn-primary" %>
+</div>
