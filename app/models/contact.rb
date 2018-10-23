@@ -5,4 +5,7 @@ class Contact < ActiveRecord::Base
 
   accepts_nested_attributes_for :address
   accepts_nested_attributes_for :phones, reject_if: :all_blank, allow_destroy: true # parâmetros da gem cocoon
+
+  validates :name, presence: true, length: { minimum: 10 }
+  validates :email, presence: true
 end

@@ -1,4 +1,5 @@
 "pt-BR":
   messages:
-    confirm: "Deseja realmente apagar o registro?"
-    listing: "Listando"
+    confirm: Deseja realmente apagar o registro?
+    listing: Listando
+    errors: "corrija o(s) seguinte(s) campo(s)"
