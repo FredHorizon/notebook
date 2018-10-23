@@ -84,6 +84,9 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
+    kaminari-i18n (0.5.0)
+      kaminari
+      rails
     lerolero_generator (1.0.1)
     less (2.6.0)
       commonjs (~> 0.2.7)
@@ -201,6 +204,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
+  kaminari-i18n
   lerolero_generator
   pry-rails
   rails (= 4.2.5)
