@@ -4,7 +4,7 @@ namespace :utils do
     
     # tarefa de testes de contatos em modo de desenvolvimento
     puts "Gerando os contatos (Contacts)..."
-      10.times do |i|
+      30.times do |i|
         Contact.create!(
           name: Faker::Name.name,
           email: Faker::Internet.email,
