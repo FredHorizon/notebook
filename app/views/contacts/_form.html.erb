@@ -1,7 +1,7 @@
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= "#{pluralize(@contact.errors.count, 'erro')} #{t('messages.errors')}:" %> </h2>
+    <div class="alert alert-danger" role="alert"> <!-- Muda os estilo para o padrão bootstrap -->
+      <h4><%= "#{pluralize(@contact.errors.count, 'error')} #{t('messages.errors')}:" %> </h4>
 
       <ul>
       <% @contact.errors.full_messages.each do |message| %>

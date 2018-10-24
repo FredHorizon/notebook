@@ -2,4 +2,4 @@
   messages:
     confirm: Deseja realmente apagar o registro?
     listing: Listando
-    errors: "corrija o(s) seguinte(s) campo(s)"
+    errors: "verifique e corriga"
