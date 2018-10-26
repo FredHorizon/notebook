@@ -15,5 +15,5 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require cocoon
-//= require notifyjs/dist/notify
+//= require notifyjs
 //= require_tree .

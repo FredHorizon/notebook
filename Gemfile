@@ -5,8 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-# Bundler-like DSL + rake tasks for Bower on Rails
-gem "bower-rails", "~> 0.11.0"
+# biblioteca JS por meio do projeto 'Rails-Assets'
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # Translations for the kaminari gem
 gem 'kaminari-i18n'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps https://github.com/amatsuda/kaminari/
