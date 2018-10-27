@@ -43,9 +43,11 @@
 
   <div id="phones"> <!-- id com o nome da associação -->
     
-    <%= f.fields_for :phones do |phones_fields| %> <!-- 'f.' chama o formulário de phone -->
-      <%= render partial: 'phone_fields', locals: {f: phones_fields} %> <!-- 'locals: {f: phones_fields}' força a mudança de 'phones_fields' para 'f' dentro da partial '_phone_fields'-->
-    <% end %>
+    <span class='glyphicon glyphicon-phone-alt' aria-hidden='true'>
+      <%= f.fields_for :phones do |phones_fields| %> <!-- 'f.' chama o formulário de phone -->
+        <%= render partial: 'phone_fields', locals: {f: phones_fields} %> <!-- 'locals: {f: phones_fields}' força a mudança de 'phones_fields' para 'f' dentro da partial '_phone_fields'-->
+      <% end %>
+    </span>
 
     <%= link_to_add_association('[Adicionar Novo Telefone]', f, :phones) %> <!-- link que adiciona telefone -->
 

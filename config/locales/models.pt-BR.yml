@@ -1,7 +1,7 @@
 "pt-BR":
   activerecord:
     models:
-      contact: # quando há singular  e plural
+      contact: # quando há singular e plural
         one: Contato
         other: Contatos
       address:
