@@ -1,11 +1,8 @@
-<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"  align="center">
+<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"  align="left">
     <h3><%= titulo %></h3> <!-- helper home -->
 
-    <ul>
-        <li><%= link_to "Endereços", addresses_path %></li>
-        <li><%= link_to "Contatos", contacts_path %></li>
-        <li><%= link_to "Tipos", kinds_path %></li>
-        <li><%= link_to "Telefones", phones_path %></li>
-        <li><%= link_to "Teste AJAX", phones_path, remote: true %></li> <!-- 'remote: true' ativa o AJAX no Rails -->
+    <ul style="list-style-type: none;">
+        <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><%= link_to " Contatos", contacts_path %></li>
+        <li><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><%= link_to " Tipos", kinds_path %></li>
     </ul>
 </div>

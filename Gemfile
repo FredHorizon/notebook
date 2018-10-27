@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Bootstrap 3
+gem 'rails-assets-bootstrap', '3.3.6', source: 'https://rails-assets.org'
 # biblioteca JS por meio do projeto 'Rails-Assets'
 gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # Translations for the kaminari gem
@@ -34,8 +36,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-# Bootstrap 3
-gem 'twitter-bootstrap-rails'
 # A library for generating fake data such as names, addresses, and phone numbers. 
 gem 'faker'
 

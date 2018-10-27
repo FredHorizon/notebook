@@ -10,7 +10,13 @@
 
 <div id="wrapper">
   <div class="container body-content" style="background-color: #cccccc">
-    <%= nav_bar brand: "Agenda Telefonica", brand_link: root_url %>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Agenda Telefônica</a>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </div>
 </div>
