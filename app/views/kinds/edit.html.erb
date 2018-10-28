@@ -1,6 +1,6 @@
-<h1>Editing Kind</h1>
+<h1><%= "#{t('messages.edit')} #{@kind.model_name.human(count: 1)}" %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @kind, class: "btn btn-success" %> |
-<%= link_to 'Back', kinds_path, class: "btn btn-default" %>
+<%= link_to t('buttons.show'), @kind, class: "btn btn-success" %> |
+<%= link_to t('buttons.back'), kinds_path, class: "btn btn-default" %>

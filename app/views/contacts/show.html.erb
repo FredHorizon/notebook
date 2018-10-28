@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('messages.name') %>:</strong>
   <%= @contact.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%= t('messages.email') %>:</strong>
   <%= @contact.email %>
 </p>
 
 <p>
-  <strong>Kind:</strong>
+  <strong><%= t('messages.kind') %>:</strong>
   <%= @contact.kind.description %>
 </p>
 
 <p>
-  <strong>Rmk:</strong>
+  <strong><%= t('messages.rmk') %>:</strong>
   <%= @contact.rmk %>
 </p>
 
-<%= link_to 'Edit', edit_contact_path(@contact), class: "btn btn-warning" %> |
-<%= link_to 'Back', contacts_path, class: "btn btn-default" %>
+<%= link_to t('buttons.edit'), edit_contact_path(@contact), class: "btn btn-warning" %> |
+<%= link_to t('buttons.back'), contacts_path, class: "btn btn-default" %>

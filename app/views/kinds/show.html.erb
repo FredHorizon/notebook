@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><%= t('messages.description') %></strong>
   <%= @kind.description %>
 </p>
 
-<%= link_to 'Edit', edit_kind_path(@kind), class: "btn btn-warning" %> |
-<%= link_to 'Back', kinds_path, class: "btn btn-default" %>
+<%= link_to t('buttons.edit'), edit_kind_path(@kind), class: "btn btn-warning" %> |
+<%= link_to t('buttons.back'), kinds_path, class: "btn btn-default" %>

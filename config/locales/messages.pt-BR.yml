@@ -1,8 +1,15 @@
 "pt-BR":
   messages:
     confirm: Deseja realmente apagar o registro?
-    listing: Listando
+    listing: Lista de
     errors: "verifique e corriga"
     created: Item criado com sucesso!
     updated: Item atualizado com sucesso!
     destroyed: Item excluído com sucesso!
+    new: Novo
+    edit: Editar
+    description: Descrição
+    name: Nome
+    email: E-mail
+    kind: Tipo
+    rmk: Obs
